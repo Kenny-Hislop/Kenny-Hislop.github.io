@@ -1,0 +1,23 @@
+<html>
+<body>
+<div id="a">
+NOTHING
+</div>
+<div id="b">
+NOTHING
+</div>
+<div id="c">
+NOTHING
+</div>
+<script>
+window.addEventListener('devicemotion', (e) => {
+	var element = document.querySelector('#a');
+	element.innerHTML = JSON.stringify(e.rotationRate.alpha)
+	element = document.querySelector('#b');
+	element.innerHTML = JSON.stringify(e.rotationRate.beta)
+	element = document.querySelector('#c');
+	element.innerHTML = JSON.stringify(e.rotationRate.gamma)
+})
+</script>
+</body>
+</html>
