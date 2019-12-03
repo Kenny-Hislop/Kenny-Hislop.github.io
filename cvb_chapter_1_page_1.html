@@ -96,11 +96,11 @@ if( is.min ) {
 
 	var textbutton327 = new jsWndTextButton(); //arrow2_next
 	var textbutton333 = new jsWndTextButton(); //Button 2
-	var webwnd337 = new jsWndWebWidget(); //Web Window_337
+	var other339 = new jsWndOther(); //HTML Extension 1
 	var alertCtr = 0;
 	var trivPageId=4; //trivPage.id
-	var arWnds = [webwnd337,textbutton327,textbutton333];
-	var arAttachObj = [textbutton327,textbutton333,webwnd337];
+	var arWnds = [other339,textbutton327,textbutton333];
+	var arAttachObj = [textbutton327,textbutton333,other339];
 	var arPooledMedia = [];
 }
 
@@ -112,7 +112,10 @@ loadIncFiles('cvb_chapter_1_page_1', true);
 </head>
 
 <body  style='background-color:#FFFFFF;'>
-<div id="wndPage"  class="" ></div>
+<div id="wndPage"  class="" >
+<div id="tobj339" style="visibility: inherit; position: absolute; left: 20px; top: 12px; width: 958px; height: 467px; z-index: 0; clip: rect(0px, 958px, 467px, 0px);"><iframe name="CVR Window" src="https://test.cenariovr.com/app/#/view/zr?zfile=live.zip&amp;id=1287" width="100%" height="100%" scrolling="no" allowtransparency="false" allow="accelerometer; gyroscope; vr" style="border:0px; overflow:hidden; background-color:white;">
+</iframe></div>
+</div>
 <div id="anchorFront"  class="" ></div>
 </body>
 </html>
